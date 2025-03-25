@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.csproj.user
+*.dbmdl
+
+# Build artifacts
+bin/
+obj/
+*.exe
+*.dll
+
+# Logs
+*.log
+
+# User files
+*.vscode/
+*.swp
