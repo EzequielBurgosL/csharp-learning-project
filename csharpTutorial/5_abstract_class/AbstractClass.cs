@@ -2,6 +2,7 @@
 {
     abstract class Animal
     {
+        public string sleep() => "Zzzz!";
         abstract public string MakeSound();
     };
 

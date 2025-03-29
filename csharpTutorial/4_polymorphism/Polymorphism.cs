@@ -15,4 +15,12 @@
             return $"Hi! Greetings from Student class.";
         }
     };
+
+    class Teacher : Person
+    {
+        public override string Greet()
+        {
+            return $"Hi! Greetings from Teacher class.";
+        }
+    };
 }

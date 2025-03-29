@@ -18,7 +18,7 @@
             {
                 if (value < 0)
                 {
-                    Console.WriteLine("Age can't be negative");
+                    throw new ArgumentOutOfRangeException(nameof(age), "Age cannot be negative.");
                 }
                 else
                 {
@@ -28,9 +28,9 @@
             }
         }
 
-        public void Greet()
+        public string Greet()
         {
-            Console.WriteLine($"Hi! My name is {this.Name} and I am {this.Age} years old.");
+            return $"Hi! My name is {this.Name} and I am {this.Age} years old.";
         }
     };
 }

@@ -1,36 +1,40 @@
-﻿namespace oopTutorial.exercise6
+﻿namespace oopTutorial.Interfaces
 {
-    class Person
+    interface IVehicle
     {
-        private string name;
-        private int age;
+        int Accelerate();
 
-        public string Name
+    }
+    class Car : IVehicle
+    {
+        public int speed = 0;
+
+        public int Accelerate()
         {
-            get { return name; }
-            set { name = value; }
-        }
-
-        public int Age
-        {
-            get { return age; }
-            set
-            {
-                if (value < 0)
-                {
-                    Console.WriteLine("Age can't be negative");
-                }
-                else
-                {
-                    age = value;
-                }
-
-            }
-        }
-
-        public void Greet()
-        {
-            Console.WriteLine($"Hi! My name is {this.Name} and I have {this.Age} years old.");
+            this.speed = 100;
+            return this.speed;
         }
     };
+
+    class Motorcycle : IVehicle
+    {
+        public int speed = 0;
+
+        public int Accelerate()
+        {
+            this.speed = 80;
+            return this.speed;
+        }
+    }
+
+    class Truck : IVehicle
+    {
+        public int speed = 0;
+
+        public int Accelerate()
+        {
+            this.speed = 60;
+            return this.speed;
+        }
+    }
 }
