@@ -1,4 +1,4 @@
-﻿namespace oopTutorial.exercise4
+﻿namespace oopTutorial.exercise6
 {
     class Person
     {
