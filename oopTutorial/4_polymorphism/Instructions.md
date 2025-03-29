@@ -1,9 +1,7 @@
-# Polymorphism and Abstract Methods
+# Polymorphism
 
 ## Objective  
-Learn about overridable and abstract methods.
+Learn about overridable methods.
 
 ## Exercises  
-- Make `Greet()` a virtual method and override it in `Student`.  
-- Create an abstract class `Animal` with a `MakeSound()` method.  
-- Derive `Dog` and `Cat` from `Animal` and implement `MakeSound()` in each class.  
+- Make `Greet()` a virtual method and override it in `Student`.

@@ -1,6 +1,6 @@
 using oopTutorial.exercise3;
 
-namespace oopTutorial.Tests
+namespace oopTutorial.exercise3.Tests
 {
     public class StudentTests
     {
