@@ -16,7 +16,7 @@
             Age = age;
         }
 
-        public abstract void Greet();
+        public abstract string Greet();
     };
 
     class Student : Person
@@ -28,9 +28,9 @@
             this.Course = course;
         }
 
-        public override void Greet()
+        public override string Greet()
         {
-            Console.WriteLine($"Hi! My name is {this.Name} and I'm a student at {this.Course}");
+            return $"Hi! My name is {this.Name} and I'm a student at {this.Course}";
         }
     };
 }

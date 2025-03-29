@@ -11,16 +11,12 @@ namespace oopTutorial.exercise3.Tests
         }
 
         [Fact]
-        public void Greet_ShouldPrintCorrectMessage()
+        public void Greet_ShouldPrintCorretMessage()
         {
             var student = new Student("Bob", 22, "Mathematics");
-            var consoleOutput = new StringWriter();
-            Console.SetOut(consoleOutput);
+            var expectedOutput = "Hi! My name is Bob and I'm a student at Mathematics";
 
-            student.Greet();
-
-            var expectedOutput = "Hi! My name is Bob and I'm a student at Mathematics\n";
-            Assert.Equal(expectedOutput, consoleOutput.ToString());
+            Assert.Equal(expectedOutput, student.Greet());
         }
     }
 }
