@@ -23,9 +23,9 @@
     {
         private string Course;
 
-        public Student(string name, int age, string course): base(name, age)
+        public Student(string name, int age, string course) : base(name, age)
         {
-             this.Course = course;
+            this.Course = course;
         }
 
         public override void Greet()

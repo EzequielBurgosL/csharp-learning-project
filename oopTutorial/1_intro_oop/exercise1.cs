@@ -12,12 +12,7 @@
         }
         public void Greet()
         {
-            Console.WriteLine($"Hi! My name is {this.Name} and I have {this.Age} years old.");
+            Console.WriteLine($"Hi! My name is {this.Name} and I am {this.Age} years old.");
         }
     };
 }
-
-/* Class usage example:
-var person = new Person("John", 25);
-person.Greet(); 
-*/

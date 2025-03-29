@@ -1,18 +1,21 @@
-﻿namespace oopTutorial.exercise6
+﻿namespace oopTutorial.exercise5
 {
     class Person
     {
         private string name;
         private int age;
 
-        public string Name {
+        public string Name
+        {
             get { return name; }
             set { name = value; }
         }
 
-        public int Age {
+        public int Age
+        {
             get { return age; }
-            set {
+            set
+            {
                 if (value < 0)
                 {
                     Console.WriteLine("Age can't be negative");

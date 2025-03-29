@@ -1,18 +1,21 @@
-﻿namespace oopTutorial.exercise2
+﻿namespace oopTutorial.exercise6
 {
-    class PersonPrivateProps
+    class Person
     {
         private string name;
         private int age;
 
-        public string Name {
+        public string Name
+        {
             get { return name; }
             set { name = value; }
         }
 
-        public int Age {
+        public int Age
+        {
             get { return age; }
-            set {
+            set
+            {
                 if (value < 0)
                 {
                     Console.WriteLine("Age can't be negative");
@@ -31,11 +34,3 @@
         }
     };
 }
-
-/* Class usage example testing validations.
-var personPrivateProps = new PersonPrivateProps();
-personPrivateProps.Name = "Jane";
-personPrivateProps.Age = -1;
-personPrivateProps.Age = 30;
-personPrivateProps.Greet();
-*/

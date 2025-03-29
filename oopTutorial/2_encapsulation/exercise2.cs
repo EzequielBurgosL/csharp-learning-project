@@ -1,18 +1,21 @@
-﻿namespace oopTutorial.exercise5
+﻿namespace oopTutorial.exercise2
 {
-    class Person
+    class PersonPrivateProps
     {
         private string name;
         private int age;
 
-        public string Name {
+        public string Name
+        {
             get { return name; }
             set { name = value; }
         }
 
-        public int Age {
+        public int Age
+        {
             get { return age; }
-            set {
+            set
+            {
                 if (value < 0)
                 {
                     Console.WriteLine("Age can't be negative");
@@ -27,7 +30,7 @@
 
         public void Greet()
         {
-            Console.WriteLine($"Hi! My name is {this.Name} and I have {this.Age} years old.");
+            Console.WriteLine($"Hi! My name is {this.Name} and I am {this.Age} years old.");
         }
     };
 }
